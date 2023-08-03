@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int n, sum = 0;
+
+    printf("Enter the number of elements in the series: ");
+    scanf("%d", &n);
+
+    printf("Enter the series: ");
+    for (int i = 0; i < n; i++) {
+        int num;
+        scanf("%d", &num);
+        if (num % 2 != 0) {
+            sum += num;
+        }
+    }
+
+    printf("Sum of odd numbers in the series: %d\n", sum);
+    return 0;
+}
